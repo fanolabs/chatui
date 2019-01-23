@@ -1,0 +1,44 @@
+.chat-message {
+  height: auto;
+  padding: 5px;
+  overflow: auto;
+
+  .content {
+    max-width: 65%;
+    float: right;
+    font-size: 12px;
+
+    .text {
+      display: inline-block;
+      padding: 5px 12px;
+      border-radius: 1.3em;
+      background-color: #0084ff;
+      text-align: left;
+      p {
+        padding: 5px 0;
+      }
+    }
+
+    ul {
+      margin-top: 3px;
+    }
+
+    li {
+      border-radius: 1.3em;
+      border: 1px solid rgba(0, 0, 0, .10);
+      color: #0084ff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    &.isBot {
+      float: left;
+
+      .text {
+        background-color: #f1f0f0;
+      }
+
+    }
+  }
+
+}

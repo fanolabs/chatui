@@ -1,0 +1,31 @@
+@import "variables";
+
+@chat-input-record-btn-width: 40px;
+
+.chat-input {
+  position: relative;
+  height: @chat-input-height;
+  border: 1px solid rgba(0, 0, 0, .10);
+  padding: 0 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+
+  .text-input {
+    width: calc(~'100% - @{chat-input-record-btn-width}');
+    border: none;
+    outline: none;
+  }
+
+  .record-btn {
+    width: @chat-input-record-btn-width;
+    height: @chat-input-record-btn-width;
+    margin-top: 5px;
+    background: url(../../static/mic.png) no-repeat;
+    background-size: cover;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+  }
+}
