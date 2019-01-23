@@ -1,6 +1,6 @@
 {
   "name": "accobot_chatui",
-  "version": "0.1.2",
+  "version": "0.4.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -28,17 +28,17 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "copy-webpack-plugin": "^4.5.0",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "html-webpack-plugin": "^3.0.4",
-    "less": "^3.0.1",
     "css-loader": "^0.28.10",
+    "dotenv-webpack": "^1.5.5",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.0.4",
+    "http-server": "^0.11.1",
+    "less": "^3.9.0",
     "less-loader": "^4.0.6",
     "url-loader": "^1.0.1",
-    "file-loader": "^1.1.11",
-    "worker-loader": "^1.1.1",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.11.0",
-    "dotenv-webpack": "^1.5.5",
-    "http-server": "^0.11.1"
+    "webpack-dev-server": "^3.1.14",
+    "worker-loader": "^1.1.1"
   }
 }
