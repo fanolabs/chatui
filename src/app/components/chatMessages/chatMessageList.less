@@ -4,4 +4,12 @@
   height: calc(~'100% - @{chat-header-height} -  @{chat-input-height}');
   overflow-x: hidden;
   overflow-y: scroll;
+
+  @supports (padding-bottom: constant(safe-area-inset-bottom)) {
+    height: calc(~'100% - @{chat-header-height} - @{chat-input-height}' - constant(safe-area-inset-bottom));
+  }
+
+  @supports (padding-bottom: env(safe-area-inset-bottom)) {
+    height: calc(~'100% - @{chat-header-height} - @{chat-input-height}' - env(safe-area-inset-bottom));
+  }
 }
